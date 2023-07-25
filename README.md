@@ -1,5 +1,4 @@
-# aspnetcore-rider-getting-started
-Develop ASP.NET Apps in Kubernetes with Okteto and Jetbrains Rider
+# Develop ASP.NET Apps in Kubernetes with Okteto and Jetbrains Rider
 
 ## Prerequisites
 Install the latest version of the Okteto CLI. [Follow this guide](https://www.okteto.com/docs/getting-started/) if you haven't done it yet.
