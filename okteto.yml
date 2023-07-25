@@ -1,0 +1,17 @@
+build:
+  hello-world:
+    image: okteto.dev/aspnet-hello-world:1.0.0
+    context: .
+  hello-world-dev:
+    context: .
+    target: dev
+deploy:
+  - kubectl apply -f k8s.yml
+dev:
+  hello-world:
+    image: ${OKTETO_BUILD_HELLO_WORLD_DEV_IMAGE}
+    command: bash
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    forward:
+      - 1234:1234
