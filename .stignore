@@ -6,3 +6,4 @@ obj/Release
 core.*.*.*
 debugger_agent.key
 debugger_agent.log
+media
